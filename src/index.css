@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  height: 20vh;
+}
+.navlink {
+  margin: 2rem;
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+}
+nav .active {
+  color: orange;
+}
+.navlink:hover {
+  color: aqua;
+}
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+article {
+  background-color: aliceblue;
+}
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
